@@ -1,0 +1,27 @@
+.order-status {
+  .order-status-confirmed {
+    color: #009ef7;
+    background-color: #f1faff;
+  }
+
+  .order-status-delivered {
+    color: #50cd89;
+    background-color: #e8fff3;
+  }
+
+  .order-status-on_delivery {
+    color: #ffc700;
+    background-color: #fff8dd;
+  }
+
+  .order-status-cancelled {
+    color: #f1416c;
+    background-color: #fff5f8;
+  }
+
+  .order-status-pending {
+    color: #7239ea;
+    background-color: #f8f5ff;
+  }
+}
+
