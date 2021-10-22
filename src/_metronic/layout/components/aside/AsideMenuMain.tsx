@@ -62,13 +62,13 @@ export function AsideMenuMain() {
       </AsideMenuItemWithSub>
 
       <AsideMenuItemWithSub
-        to='/shop'
+        to='/wherehouse'
         title='المخازن'
         fontIcon='bi-archive'
         icon='/media/icons/duotune/general/gen022.svg'
       >
         <AsideMenuItem
-          to='/dashboard'
+          to='/wherehouse/all'
           title='عرض الكل'
           hasBullet={true}
         />
@@ -87,8 +87,8 @@ export function AsideMenuMain() {
         icon='/media/icons/duotune/general/gen022.svg'
       >
         <AsideMenuItem
-          to='/dashboard'
-          title='عرض الكل'
+          to='/shop/general-settings'
+          title='اعدادات عامة'
           hasBullet={true}
         />
 

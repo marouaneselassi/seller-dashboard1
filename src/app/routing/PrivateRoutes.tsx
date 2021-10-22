@@ -8,6 +8,10 @@ export function PrivateRoutes() {
   const BuilderPageWrapper = lazy(() => import('../pages/layout-builder/BuilderPageWrapper'))
   const OrdersPageWrapper = lazy(() => import('../pages/orders/OrdersPageWrapper'))
   const ProductsPageWrapper = lazy(() => import('../pages/products/ProductsPageWrapper'))
+
+  // shop
+  const ShopPageWrapper = lazy(() => import('../pages/shop/ShopPageWrapper'))
+  
   const ProfilePage = lazy(() => import('../modules/profile/ProfilePage'))
   const WizardsPage = lazy(() => import('../modules/wizards/WizardsPage'))
   const AccountPage = lazy(() => import('../modules/accounts/AccountPage'))
@@ -21,6 +25,9 @@ export function PrivateRoutes() {
         <Route path='/builder' component={BuilderPageWrapper} />
         <Route path='/orders' component={OrdersPageWrapper} />
         <Route path='/products' component={ProductsPageWrapper} />
+
+        <Route path='/shop/general-settings' component={ShopPageWrapper} />
+        
         <Route path='/crafted/pages/profile' component={ProfilePage} />
         <Route path='/crafted/pages/wizards' component={WizardsPage} />
         <Route path='/crafted/widgets' component={WidgetsPage} />
