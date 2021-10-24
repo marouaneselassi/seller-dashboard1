@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import React, {useEffect, useState} from 'react'
 import {KTSVG, toAbsoluteUrl, uploadedFile} from '../../../_metronic/helpers'
 // import {KTSVG, toAbsoluteUrl} from '../../../_metronic/helpers'
-import { Button,  MultiSelect, TextInput } from '@mantine/core';
+import { Button,  MultiSelect, TextInput, Textarea,} from '@mantine/core';
 import { Drawer, Space, Switch, InputNumber, notification } from 'antd';
 
 import Helper from './../../helpers';
@@ -198,20 +198,52 @@ class GeneralSettingsPage extends React.Component {
     return (
       <>
         <div className="card">
-          <div className="card-header">المعلومات الاولية</div>
+          <div className="card-header"><h5 className="mb-0 h6">المعلومات الاولية
+        </h5></div>
           <div className="card-body">
             <div className="form-group">
               <TextInput
-                placeholder="Your name"
+                placeholder="اسم المتجر"
                 label="اسم المتجر"
                 required
               />
+              <br />
+              <TextInput
+                placeholder="عنوان المتجر"
+                label="عنوان المتجر"
+                required
+              />
+              <br />
+              <TextInput
+                placeholder="عنوان الميتا"
+                label=" عنوان الميتا"
+                required
+              />
+              <br />
+              <Textarea
+  placeholder="الوصف الميتا"
+                 label="الوصف الميتا"
+  required
+/> 
+<br /> 
+<div className="form-group mb ">
+  <button type="submit" className="btn btn-sm btn-primary">حفظ</button>
+  </div>
+
+
             </div>
+            
           </div>
         </div>
+
+       
       </>
+      
     )
+    
   }
+  
+  
 }
 
 export { GeneralSettingsPage }
